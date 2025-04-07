@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Aryan P</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #fff);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .about-container {
+      max-width: 600px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease-out forwards;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .about-container:hover {
+      transform: translateY(20px);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #00796b;
+      transition: color 0.3s ease;
+    }
+
+    h1:hover {
+      color: #004d40;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <h1>About Me</h1>
+    <p>
+      Hi, I'm Aryan P., a Computer Science Engineering student at Amrita Vishwa Vidyapeetham. I have a passion for crafting clean, responsive, and user-friendly interfaces using HTML and CSS. I'm always eager to learn new technologies and enhance my skills in front-end development.
+    </p>
+  </div>
+</body>
+</html>

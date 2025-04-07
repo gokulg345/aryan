@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARYAN P - Portfolio</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #efe6e6;
+      color: #333;
+    }
+
+    header {
+      background: #1fea7e;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .logo img {
+      width: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #064420;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #dbd0d0;
+      transform: scale(1.1);
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 60px 30px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero-content {
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .hero-content h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content h2 span {
+      color: #d73020;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      color: #2fe029;
+    }
+
+    .hero-image img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0px 0px 30px rgba(31, 179, 198, 0.6);
+      transition: transform 0.4s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .latest-work {
+      background-color: #fdf6e3;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .latest-work h2 {
+      font-size: 36px;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    .latest-work p {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    .work-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .work-item {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .work-item:hover {
+      transform: scale(1.05);
+    }
+
+    .work-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .work-item h3 {
+      color: #000;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .work-item p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .work-item a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .work-item a:hover {
+      background-color: #444;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content h2 {
+        font-size: 30px;
+      }
+
+      .hero-image img {
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.jpeg" alt="Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hi I am <span>ARYAN P</span></h2>
+      <p>A passionate web developer ready to build amazing things.</p>
+    </div>
+    <div class="hero-image">
+      <img src="profilephoto.jpeg" alt="Aryan P">
+    </div>
+  </section>
+
+  <section class="latest-work">
+    <h2>Recent Projects</h2>
+    <p>Below you can see some examples of my recent work.</p>
+    <div class="work-gallery">
+      <div class="work-item">
+        <img src="onampic.jpeg" alt="Onam">
+        <h3>Onam</h3>
+        <p>Onam is a vibrant harvest festival celebrated in Kerala, marking the homecoming of the legendary King Mahabali.
+          It’s known for its colorful pookalams (flower designs), traditional feasts, and joyful boat races.</p>
+        <a href="Onam.html">View project →</a>
+      </div>
+      <div class="work-item">
+        <img src="questionpaper.jpg" alt="modelquestion"
+        <p>Model questions refer to practice questions that mirror those on an exam.</p>
+        <a href="modelquestion.html">View project →</a>
+      </div>
+      <div class="work-item">
+        <img src="table.jpeg" alt="table">
+        <h3>Table</h3>
+        <p>Just as a table brings order and purpose to a home, the HTML table organizes information with clarity and structure on the web.</p>
+        <a href="Table1.html">View project →</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
